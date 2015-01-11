@@ -1,0 +1,13 @@
+{
+  "name": "QuoteReader",
+  "version": "0.0.0",
+  "description": "QuoteReader",
+  "main": "server.js",
+  "author": {
+    "name": "jizuo",
+    "email": ""
+  }
+  "dependencies": {
+	  "mongoose": "3.8.21"
+  }
+}
