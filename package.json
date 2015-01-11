@@ -6,7 +6,7 @@
   "author": {
     "name": "jizuo",
     "email": ""
-  }
+  },
   "dependencies": {
 	  "mongoose": "3.8.21"
   }
