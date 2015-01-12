@@ -67,9 +67,15 @@ function extractData() {
     var timeArr = paramArr[31].split(':');
     var date = new Date(parseInt(dateArr[0]), parseInt(dateArr[1])-1, parseInt(dateArr[2]), 
         parseInt(timeArr[0]), parseInt(timeArr[1]), parseInt(timeArr[2]));
+    date.setTime(date.getTime() + getUtcDiff());
     console.log('price=' + curPrice + ', date=' + date.toString());
     
     return {code: 'sh000001', price: curPrice, time: date.getTime()};
+}
+
+function getUtcDiff() {
+    var d = new Date();
+    return (-8) * 3600000;
 }
 
 function storeData(code, price, time) {
